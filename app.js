@@ -11,7 +11,7 @@ if ('serviceWorker' in navigator) {
 }
  
 function kalkulacka() {
-    if (document.getElementById('+'))
+    if (document.getSelection('+'))
     {
         document.getElementById('text').innerText = 'plus'
     }
