@@ -9,9 +9,11 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+var select =  document.getElementById('znamenka')
  
 function kalkulacka() {
-    if (document.getSelection() === '+')
+    if (select === '+')
     {
         document.getElementById('text').innerText = 'plus'
     }
