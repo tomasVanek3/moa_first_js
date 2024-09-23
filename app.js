@@ -10,9 +10,11 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-var select = document.getElementById('znamenka').value;
+
  
 function kalkulacka() {
+    var select = document.getElementById('znamenka').value;
+    
     if (select === '+')
     {
         document.getElementById('text').innerText = 'plus';
