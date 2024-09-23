@@ -10,6 +10,9 @@ if ('serviceWorker' in navigator) {
     });
 }
  
-function sayHello() {
-    document.getElementById('hello').innerText = 'Hello world';
+function kalkulacka() {
+    if (document.getElementById('kalkulacka') == "+"){
+        document.getElementById
+    }
+    ;
 }
