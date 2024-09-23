@@ -10,12 +10,12 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-var select =  document.getElementById('znamenka')
+var select = document.getElementById('znamenka').value;
  
 function kalkulacka() {
     if (select === '+')
     {
-        document.getElementById('text').innerText = 'plus'
+        document.getElementById('text').innerText = 'plus';
     }
     
 }
