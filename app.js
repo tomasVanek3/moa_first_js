@@ -12,24 +12,39 @@ if ('serviceWorker' in navigator) {
  
 function kalkulacka() {
     var select = document.getElementById('znamenka').value;
-    var cislo1 = document.getElementById('pole1').value;
-    var cislo2 = document.getElementById('pole2').value;
+    var hodnota1 = document.getElementById('pole1').value;
+    var hodnota2 = document.getElementById('pole2').value;
+    
+
+    var cislo1 = parseInt(hodnota1, 10);
+    var cislo2 = parseInt(hodnota2, 10);
+    
 
     if (select === '+')
     {
-        document.getElementById('text').innerText = 'plus';
+        vysledek = cislo1 + cislo2;
+        document.getElementById('text').innerText = vysledek;
     }
     else{
         if (select === '-'){
-            document.getElementById('text').innerText = 'minus';
+            vysledek = cislo1 - cislo2;
+            document.getElementById('text').innerText = vysledek;
         }
         else{
             if (select === '*'){
-                document.getElementById('text').innerText = 'krát';
+                vysledek = cislo1 * cislo2;
+                document.getElementById('text').innerText = vysledek;
             }
             else{
                 if (select === '/'){
-                    document.getElementById('text').innerText = 'děleno';
+                    if (cislo2 === 0){
+                        document.getElementById('text').innerText = 'Nulou se nedá dělit';
+                    }
+                    else{
+                        vysledek = cislo1 / cislo2;
+                        document.getElementById('text').innerText = vysledek;
+                    }
+                    
                 }
             }
         }
