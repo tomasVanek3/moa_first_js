@@ -21,6 +21,16 @@ function kalkulacka() {
         if (select === '-'){
             document.getElementById('text').innerText = 'minus';
         }
+        else{
+            if (select === '*'){
+                document.getElementById('text').innerText = 'krát';
+            }
+            else{
+                if (select === '/'){
+                    document.getElementById('text').innerText = 'děleno';
+                }
+            }
+        }
     }
     
 }
