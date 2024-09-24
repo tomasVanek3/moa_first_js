@@ -19,7 +19,7 @@ function kalkulacka() {
     }
     else{
         if (select === '-'){
-            document.getElementById('text').innerText = 'plus';
+            document.getElementById('text').innerText = 'minus';
         }
     }
     
