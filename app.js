@@ -9,15 +9,18 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
-
-
  
 function kalkulacka() {
     var select = document.getElementById('znamenka').value;
-    
+
     if (select === '+')
     {
         document.getElementById('text').innerText = 'plus';
+    }
+    else{
+        if (select === '-'){
+            document.getElementById('text').innerText = 'plus';
+        }
     }
     
 }
