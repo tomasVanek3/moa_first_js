@@ -12,6 +12,8 @@ if ('serviceWorker' in navigator) {
  
 function kalkulacka() {
     var select = document.getElementById('znamenka').value;
+    var cislo1 = document.getElementById('pole1').value;
+    var cislo2 = document.getElementById('pole2').value;
 
     if (select === '+')
     {
