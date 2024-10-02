@@ -44,7 +44,6 @@ function kalkulacka() {
                         vysledek = cislo1 / cislo2;
                         document.getElementById('text').innerText = vysledek;
                     }
-                    
                 }
             }
         }
